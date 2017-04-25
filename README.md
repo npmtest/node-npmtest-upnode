@@ -1,6 +1,6 @@
 # npmtest-upnode
 
-#### basic test coverage for  upnode (v0.5.0)  [![npm package](https://img.shields.io/npm/v/npmtest-upnode.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-upnode) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-upnode.svg)](https://travis-ci.org/npmtest/node-npmtest-upnode)
+#### basic test coverage for  [upnode (v0.5.0)](https://github.com/substack/upnode#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-upnode.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-upnode) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-upnode.svg)](https://travis-ci.org/npmtest/node-npmtest-upnode)
 
 #### transactional connection queue for dnode
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-upnode/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-upnode/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-upnode/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-upnode/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-upnode/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-upnode/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-upnode/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-upnode/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-upnode/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-upnode/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-upnode/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-upnode/build/coverage.html/index.html)
 
@@ -35,14 +35,33 @@
 ```json
 
 {
-    "name": "upnode",
-    "description": "transactional connection queue for dnode",
-    "version": "0.5.0",
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/substack/upnode.git"
+    "author": {
+        "name": "James Halliday",
+        "url": "http://substack.net"
     },
-    "main": "index.js",
+    "bugs": {
+        "url": "https://github.com/substack/upnode/issues"
+    },
+    "dependencies": {
+        "dnode": ">= 1.2.2"
+    },
+    "description": "transactional connection queue for dnode",
+    "devDependencies": {
+        "tap": "~0.2.6"
+    },
+    "directories": {
+        "example": "example",
+        "test": "test"
+    },
+    "dist": {
+        "shasum": "1a7f05def29075e7b6df4d1fd34d31e5016b05a1",
+        "tarball": "https://registry.npmjs.org/upnode/-/upnode-0.5.0.tgz"
+    },
+    "engines": {
+        "node": ">=0.12.0"
+    },
+    "gitHead": "c842fa5960821aeba2ad6482e9662dce14ef7d94",
+    "homepage": "https://github.com/substack/upnode#readme",
     "keywords": [
         "dnode",
         "queue",
@@ -51,27 +70,27 @@
         "transaction",
         "interruption"
     ],
-    "directories": {
-        "example": "example",
-        "test": "test"
+    "license": "MIT",
+    "main": "index.js",
+    "maintainers": [
+        {
+            "name": "mreinstein"
+        },
+        {
+            "name": "substack"
+        }
+    ],
+    "name": "upnode",
+    "optionalDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/substack/upnode.git"
     },
     "scripts": {
         "test": "tap test/*.js"
     },
-    "dependencies": {
-        "dnode": ">= 1.2.2"
-    },
-    "devDependencies": {
-        "tap": "~0.2.6"
-    },
-    "engines": {
-        "node": ">=0.12.0"
-    },
-    "license": "MIT",
-    "author": {
-        "name": "James Halliday",
-        "url": "http://substack.net"
-    }
+    "version": "0.5.0",
+    "bin": {}
 }
 ```
 
